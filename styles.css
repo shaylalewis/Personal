@@ -1,0 +1,373 @@
+/* ================================= 
+  CSS Reset
+==================================== */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background: white;
+}
+
+img {
+    max-width: 100%;
+    height: fit-content;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    color: #197C5D;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h1#about {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    margin-top: 1.5rem;
+}
+
+h2#portfolio,
+div.col>p {
+    margin-bottom: 1rem;
+}
+
+h2#portfolio {
+    clear: both;
+}
+
+h3 {
+    margin: 1rem;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    color: #203C5B;
+}
+
+section.abt>p {
+    margin-top: 1.5rem;
+    margin-right: 18rem;
+    line-height: 1.5;
+}
+
+section.abt>img {
+    float: right;
+    margin-bottom: 40px;
+    margin-right: 1rem;
+    margin-top: -1rem;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+
+/* ---- Navigation ---- */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav>a {
+    margin: 25px;
+    padding: 10px;
+    color: #3A6EA5;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+/* ---- Layout Containers ---- */
+
+main {
+    margin: 25px;
+}
+
+footer {
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Span for footer */
+
+span {
+    display: block;
+    margin-top: 20px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flx-frm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    border-radius: 5px;
+    height: 2rem;
+}
+
+
+/* ---- Page Elements ---- */
+
+header {
+    text-align: center;
+    margin-top: 15px;
+}
+
+img[src*="portfolio"] {
+    max-width: 100%;
+    height: fit-content;
+    margin-right: 10px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+::placeholder {
+    text-align: right;
+}
+
+textarea {
+    border-radius: 5px;
+}
+
+
+/* ---- Font Awesome ---- */
+
+.fa-twitter {
+    background: #55ACEE;
+    color: #FFFFFF;
+}
+
+.fa-github {
+    background: #211F1F;
+    color: #FFFFFF;
+}
+
+.fa-github,
+.fa-twitter {
+    font-size: 1.5rem;
+}
+
+
+/* ---- To Top ---- */
+
+#to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+#to-top i {
+    color: rgb(124, 30, 233);
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 35px;
+}
+
+#to-top:hover i {
+    color: rgb(59, 216, 72);
+    top: 5px;
+}
+
+button {
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 75%;
+    align-self: center;
+    height: 2.5rem;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+    /* fieldset label {
+        flex-basis: 45%;
+        margin: auto 0;
+    } */
+    .flx-frm {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) {}
